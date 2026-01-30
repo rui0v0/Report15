@@ -1,0 +1,84 @@
+/* 全体の基本設定 */
+body {
+  margin: 0;
+  text-align: center;
+    font-family: "Rounded Mplus 1c",
+               "Hiragino Maru Gothic ProN",
+               "Noto Sans JP",
+               "Meiryo",
+               sans-serif;
+}
+
+/* ヘッダー */
+.site-header {
+  padding: 20px 0;
+  border-bottom: 2px solid #170e7566;
+}
+
+/* タブメニュー */
+.tab-menu {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #170e7566;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 50px 0;
+  font-size: 100px;
+  background-color: #e6e3e3bf;
+  border: none;
+  cursor: pointer;
+  border-right: 2px solid #170e7566;
+}
+
+.tab-button:last-child {
+  border-right: none;
+}
+
+/* 選択中タブ用 */
+.tab-button.active {
+  background-color: #1f880fa8;
+}
+
+/* コンテンツ表示エリア */
+.content-area {
+  padding: 20px;
+  font-size: 45px;
+}
+
+/* タブ内容（初期は非表示） */
+.tab-content {
+  display: none;
+}
+
+/* 表示中のタブ */
+.tab-content.active {
+  display: block;
+}
+
+/* タブ内（1・2・3）のボタン */
+.tab-content button {
+  font-size: 40px;
+  padding: 20px 35px;
+  margin-top: 20px;
+  font-family: "Rounded Mplus 1c",
+               "Hiragino Maru Gothic ProN",
+               "Noto Sans JP",
+               "Meiryo",
+               sans-serif;
+  background-color: #31aed3df;
+}
+
+.github-link {
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  font-size: 35px;
+  text-decoration: none;
+  color: #555;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}

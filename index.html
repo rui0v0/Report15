@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>15回レポート用のWebサイト</title>
+  <link rel="stylesheet" href="report15.css" />
 </head>
 <body>
-  <h1>あいうえお</h1>
+
+<!-- ヘッダー -->
+  <header class="site-header">
+    <h1>15回レポート用のWebサイト</h1>
+  </header>
+
+<!-- タブボタン -->
+  <nav class="tab-menu">
+    <button class="tab-button active" data-tab="tab1">1</button>
+    <button class="tab-button" data-tab="tab2">2</button>
+    <button class="tab-button" data-tab="tab3">3</button>
+  </nav>
+
+<!-- コンテンツ表示エリア -->
+  <main class="content-area">
+    <section id="tab1" class="tab-content active">
+      <p>1</p>
+      <button id="btn1">タブ1のボタン</button>
+    </section>
+
+    <section id="tab2" class="tab-content">
+      <p>2</p>
+      <button id="btn2">タブ2のボタン</button>
+    </section>
+
+    <section id="tab3" class="tab-content">
+      <p>3</p>
+      <button id="btn3">タブ3のボタン</button>
+    </section>
+  </main>
+
+  <!-- GitHubリンク -->
+  <a href="https://github.com/rui0v0" class="github-link" target="_blank">
+    GitHub
+  </a>
+
+  <script src="report15.js"></script>
 </body>
 </html>
